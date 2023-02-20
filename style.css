@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}   
+nav{
+
+    width: 100%;
+    line-height: 75px;
+    padding: 0px 100px;
+    position:fixed;
+    background-image: linear-gradient(cornflowerblue,cornflowerblue);
+} 
+nav .logo{
+    font-size: 95px;
+    font-weight: bold;
+    float: left;
+    color: cornsilk;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+
+}
+nav ul{
+float: right;
+}
+nav li{
+    display: inline-block ;
+    list-style: none;
+}
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 5px;
+    color: rgb(225, 236, 227);
+    text-decoration: none;
+}
+img
+{
+width: 590px;
+height: 350px;
+margin: top 1px;
+padding-top: 100px;
+padding-bottom: 10px;
+padding-left: 25px;
+padding-right:20px;
+border: 1px;
+border-color: antiquewhite;
+}
+.container
+{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: cornflowerblue;
+padding-bottom: 10px;
+}
+.text
+{
+    font-size: 20px;
+padding-top: 80px;
+}   
+.res   
+
+    {
+        background-color: lightgreen;
+        width: 160px;
+        padding-top:1px;
+        padding-bottom: 25px;
+        height:1px;
+        margin-top:10px;
+      }
+
+
+      .item2 { grid-area: menu; }
+      .item3 { grid-area: main; }
+      .item4 { grid-area: right; }
+      .item5 { grid-area: footer; }
+   
+      .grid-container
+       {
+        display:grid;
+        grid-template-areas:
+          'menu menu main main right right'
+          'footer footer footer footer footer footer';
+        grid-template-rows: 400px 50px;
+        gap: 10px;
+        background-color: #21e745;
+        padding: 10px;
+      }
+      
+      .grid-container 
+      {
+        background-color: rgba(231, 224, 225, 0.8);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+      }
+      
+      .item5
+      {
+        font-size:x-small;
+      }
+      span
+      {
+        font-size: 20px;
+        font-style: italic;
+        color: rgb(23, 216, 84);
+      }
